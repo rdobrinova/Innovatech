@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign up</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="../../CSS/NavigationBar/signup.css"
+		/>
+	</head>
+	<body>
+		<nav class="container">
+			<div class="heading">
+				<h4>Innovatech</h4>
+			</div>
+			<ul class="nav-links">
+				<li><a href="posts.html" class="child">Posts</a></li>
+				<li><a href="newsletter.html" class="child">Newsletter</a></li>
+				<li><a href="about.html" class="child">About</a></li>
+				<li><a href="login.html" class="child">Login</a></li>
+				<li>
+					<a href="signup.html" class="child active"><i>Sign&nbsp;up</i></a>
+				</li>
+			</ul>
+		</nav>
+		<div class="body-text">
+			<form action="../../Images/signup.jpg" class="form">
+				<div class="containerr">
+					<h1>Register</h1>
+					<p>Please fill in this form to create an account.</p>
+					<hr />
+
+					<label for="email"><b>Email</b></label>
+					<input
+						type="text"
+						placeholder="Enter Email"
+						name="email"
+						id="email"
+						required
+					/>
+
+					<label for="psw"><b>Password</b></label>
+					<input
+						type="password"
+						placeholder="Enter Password"
+						name="psw"
+						id="psw"
+						required
+					/>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<input
+						type="password"
+						placeholder="Repeat Password"
+						name="psw-repeat"
+						id="psw-repeat"
+						required
+					/>
+					<hr />
+
+					<button type="submit" class="registerbtn">Register</button>
+				</div>
+				<div class="containerr signin">
+					<p>Already have an account? <a href="login.html">Login</a>.</p>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
