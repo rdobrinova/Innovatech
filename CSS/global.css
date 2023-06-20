@@ -1,0 +1,190 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+p {
+	margin: 0px;
+}
+
+/* Header */
+.body-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	box-shadow: 0px 0px 6px gray;
+	background: linear-gradient(
+		to right,
+		rgb(23, 16, 134),
+		rgb(20, 160, 203),
+		rgb(7, 235, 243)
+	);
+}
+
+.heading {
+	/* color: white; */
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.child {
+	display: flex;
+	font-size: 20px;
+	height: 3.6rem;
+	align-items: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+	color: lightseagreen;
+}
+
+.form-txt {
+	display: flex;
+}
+
+/*  Footer  */
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 5rem;
+	bottom: 0;
+	background: linear-gradient(
+		to right,
+		rgb(23, 16, 134),
+		rgb(20, 160, 203),
+		rgb(7, 235, 243)
+	);
+	box-shadow: 0px -1px 2px gray;
+}
+
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+.social-icons {
+	padding-left: 35%;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.social-icons li.title {
+	margin-right: 15px;
+	text-transform: uppercase;
+	color: #96a2b2;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.social-icons a {
+	background-color: #eceeef;
+	color: #818a91;
+	font-size: 16px;
+	display: inline-block;
+	line-height: 44px;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	margin-right: 8px;
+	border-radius: 100%;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.social-icons a:activepage,
+.social-icons a:focus,
+.social-icons a:hover {
+	color: #fff;
+	background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+	line-height: 34px;
+	height: 34px;
+	width: 34px;
+	font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+	background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+	background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+	background-color: #007bb6;
+}
+
+.social-icons a.instagram:hover {
+	background-color: #ea4c89;
+}
+
+.p-3 {
+	padding: 16px;
+}
+
+/* Scroll */
+
+/*Width*/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) {
+	.body,
+	.footer {
+		flex-direction: column;
+	}
+}

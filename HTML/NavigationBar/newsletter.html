@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Newsletter</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			type="text/css"
-			rel="stylesheet"
-			href="../../CSS/NavigationBar/newsletter.css"
-		/>
-	</head>
-	<body>
-		<nav class="container">
-			<div class="heading">
-				<h4>Innovatech</h4>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Newsletter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/global.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/NavigationBar/newsletter.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="page-container">
+		<div class="content-wrap">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="posts.html">InnovaTech</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="posts.html">Posts</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="newsletter.html">Newsletter</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="signup.html">Sign up</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="body-text">
+				<form class="form">
+					<div class="containeer">
+						<h2>Newsletter</h2>
+					</div>
+
+					<div class="containeer" style="background-color: white">
+						<input type="text" placeholder="Name" name="name" required />
+						<input type="text" placeholder="Email address" name="mail" required />
+						<label>
+							<input type="checkbox" checked="checked" name="subscribe" />
+							Daily Newsletter
+						</label>
+					</div>
+
+					<div class="containeer">
+						<input id="submitbutton" type="submit" value="Subscribe" />
+					</div>
+				</form>
+
+				<footer class="bg-light text-lg-start">
+					<!-- Copyright -->
+					<div class="p-3">
+						Contact Us:
+						<a class="text" href="mailto:innovatech@gmail.com">innovatech@gmail.com</a>
+						<p>Copyright © 2023 All Rights Reserved by Innovatech.</p>
+					</div>
+					<!-- Copyright -->
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<ul class="social-icons">
+							<li>
+								<a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+										class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a class="twitter" href="https://twitter.com/i/flow/login" target="_blank"><i
+										class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a class="instagram" href="https://www.instagram.com/" target="_blank"><i
+										class="fa fa-instagram"></i></a>
+							</li>
+							<li>
+								<a class="linkedin" href="https://mk.linkedin.com/" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+				</footer>
 			</div>
-			<ul class="nav-links">
-				<li><a href="posts.html" class="child">Posts</a></li>
-				<li>
-					<a href="newsletter.html" class="child active"><i>Newsletter</i></a>
-				</li>
-				<li><a href="about.html" class="child">About</a></li>
-				<li><a href="login.html" class="child">Login</a></li>
-				<li><a href="signup.html" class="child">Sign&nbsp;up</a></li>
-			</ul>
-		</nav>
-		<div class="body-text">
-			<form action="../../Images/news.png" class="form">
-				<div class="containeer">
-					<h2>Subscribe to our Newsletter</h2>
-					<p></p>
-				</div>
-
-				<div class="containeer" style="background-color: white">
-					<input type="text" placeholder="Name" name="name" required />
-					<input type="text" placeholder="Email address" name="mail" required />
-					<label>
-						<input type="checkbox" checked="checked" name="subscribe" /> Daily
-						Newsletter
-					</label>
-				</div>
-
-				<div class="containeer">
-					<input type="submit" value="Subscribe" />
-				</div>
-			</form>
 		</div>
-	</body>
+	</div>
+	<script src="../../JavaScript/newsletter.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+		integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

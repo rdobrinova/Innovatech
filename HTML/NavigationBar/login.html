@@ -1,57 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			type="text/css"
-			rel="stylesheet"
-			href="../../CSS/NavigationBar/login.css"
-		/>
-	</head>
-	<body>
-		<nav class="container">
-			<div class="heading">
-				<h4>Innovatech</h4>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/global.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/NavigationBar/login-signup-form.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/NavigationBar/login.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+	<div class="page-container">
+		<div class="content-wrap">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="posts.html">InnovaTech</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="posts.html">Posts</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="newsletter.html">Newsletter</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="signup.html">Sign up</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="forms">
+					<div class="form login">
+						<span class="title">Login</span>
+						<form action="#">
+							<div class="input-field">
+								<input type="text" placeholder="Enter your username" required>
+								<i class="uil uil-envelope icon"></i>
+							</div>
+							<div class="input-field">
+								<input type="password" class="password" placeholder="Enter your password" required>
+								<i class="uil uil-lock icon"></i>
+								<i class="uil uil-eye-slash showHidePw"></i>
+							</div>
+							<div class="checkbox-text">
+								<div class="checkbox-content">
+									<input type="checkbox" id="logCheck">
+									<label for="logCheck" class="text">Remember me</label>
+								</div>
+
+								<a href="#" class="text">Forgot password?</a>
+							</div>
+							<div class="input-field button">
+								<input type="button" value="Login">
+							</div>
+						</form>
+						<div class="login-signup">
+							<span class="text">Not a member?
+								<a href="signup.html" class="text signup-link">Sign-up Now</a>
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<ul class="nav-links">
-				<li><a href="posts.html" class="child">Posts</a></li>
-				<li><a href="newsletter.html" class="child">Newsletter</a></li>
-				<li><a href="about.html" class="child">About</a></li>
-				<li>
-					<a href="login.html" class="child active"><i>Login</i></a>
-				</li>
-				<li><a href="signup.html" class="child">Sign&nbsp;up</a></li>
-			</ul>
-		</nav>
-		<div class="bg-img">
-			<form action="Images/login.jpg" class="containerr">
-				<h1>Login</h1>
 
-				<label for="email"><b>Email</b></label>
-				<input type="text" placeholder="Enter Email" name="email" required />
-
-				<label for="psw"><b>Password</b></label>
-				<input
-					type="password"
-					placeholder="Enter Password"
-					name="psw"
-					required
-				/>
-
-				<button type="submit" class="btn">Login</button>
-
-				<p class="mb-0">
-					Don't have an account?
-					<a href="signup.html" class="text-white-50 fw-bold">Sign Up</a>
-				</p>
-			</form>
+			<footer class="bg-light text-lg-start">
+				<!-- Copyright -->
+				<div class="p-3">
+					Contact Us:
+					<a class="text" href="mailto:innovatech@gmail.com">innovatech@gmail.com</a>
+					<p>Copyright © 2023 All Rights Reserved by Innovatech.</p>
+				</div>
+				<!-- Copyright -->
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li>
+							<a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+									class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a class="twitter" href="https://twitter.com/i/flow/login" target="_blank"><i
+									class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a class="instagram" href="https://www.instagram.com/" target="_blank"><i
+									class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a class="linkedin" href="https://mk.linkedin.com/" target="_blank"><i
+									class="fa fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
-	</body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+			integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+			integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+			crossorigin="anonymous"></script>
+		<script src="../../JavaScript/login-signup.js"></script>
+</body>
+
 </html>

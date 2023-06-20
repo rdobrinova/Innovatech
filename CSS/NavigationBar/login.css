@@ -1,109 +1,49 @@
-/* Navigation Bar */
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-.body-text {
-	display: flex;
-	font-family: "Montserrat", sans-serif;
-	align-items: center;
-	justify-content: center;
-	margin-top: 250px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 8vh;
-	background: linear-gradient(
-		to right,
-		rgb(23, 16, 134),
-		rgb(20, 160, 203),
-		rgb(7, 235, 243)
-	);
-	font-family: "Montserrat", sans-serif;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding: 0 5vw;
-	z-index: 100;
-}
-
-.heading {
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 20px;
-}
-
-.child {
-	display: flex;
-	font-size: 20px;
-	height: 3.6rem;
-	align-items: center;
-}
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	width: 40%;
-}
-
-.nav-links li {
-	list-style: none;
-}
-
-.nav-links a {
-	color: white;
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: bold;
-	font-size: 14px;
-	padding: 14px 16px;
-}
-
-.nav-links a:hover:not(.active) {
-	background-color: lightseagreen;
-}
-
-.nav-links li a.active {
-	background-color: #008cff;
-}
-
-@media screen and (min-width: 100px) and (max-width: 1000px) {
-	.container {
-		flex-direction: column;
-	}
-}
-
-.active {
-	background-color: #008cff;
-}
-
 /* Log in */
 * {
 	box-sizing: border-box;
 }
+body {
+	background-image: url("../../Images/signup.jpg");
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .bg-img {
 	background-image: url("../../Images/login.jpg");
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7rem;
 	/* min-height: 380px; */
 	width: 100%;
-	height: 100vh;
+	height: 83.6vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* position: relative;  */
 }
+.form-txt {
+	display: flex;
+	justify-content: space-between;
+}
+.paragraph {
+	background-color: rgba(0, 0, 0, 0.2);
+	text-align: justify;
+
+	font-weight: bold;
+	color: white;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+.login-container {
+	border: 10px solid black;
+}
 
 .containerr {
-	font-family: "Montserrat", sans-serif;
-	position: absolute;
-	top: 25%;
-	right: 30px;
 	margin: 20px;
 	max-width: 300px;
 	padding: 16px;
@@ -113,7 +53,6 @@ nav {
 input[type="text"],
 input[type="password"] {
 	width: 100%;
-	padding: 15px;
 	margin: 5px 0 22px 0;
 	border: none;
 	background: #f1f1f1;
@@ -142,4 +81,11 @@ input[type="password"]:focus {
 .mb-0 {
 	padding-top: 10px;
 	margin-bottom: 0;
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) {
+	.bg-img {
+		flex-direction: column;
+	}
 }

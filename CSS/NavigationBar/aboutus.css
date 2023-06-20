@@ -1,99 +1,22 @@
-/* Navigation Bar */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-  
-.body-text {
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    align-items: center;
-    justify-content: center;
-    margin-top: 250px;
-}
-  
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    min-height: 8vh;  
-    background:linear-gradient(to right, rgb(23, 16, 134), rgb(20, 160, 203), rgb(7, 235, 243)); 
-    font-family: "Montserrat", sans-serif; 
-    position: fixed; 
-    top: 0;   
-    width: 100%;    
-    padding: 0 5vw;
-    z-index: 100;
-}
-  
-.heading {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
+.container img {
+	width: 100%;
+	margin: auto;
+	display: block;
 }
 
-.child {
-    display: flex;
-    font-size: 20px;
-    height: 3.6rem;
-	align-items: center;
-}
-.nav-links {
-    display: flex; 
-    justify-content: space-around; 
-    width: 40%;  
+.container p {
+	text-align: justify;
+	font-weight: bold;
 }
 
-.nav-links li {  
-    list-style: none;  
-}
-  
-.nav-links a { 
-    color: white; 
-    text-decoration: none; 
-    letter-spacing: 3px; 
-    font-weight: bold;  
-    font-size: 14px;  
-    padding: 14px 16px;  
-}
-  
-.nav-links a:hover:not(.active) { 
-    background-color: lightseagreen;
+.content-wrap {
+	padding-top: 5rem;
 }
 
-.nav-links li a.active {
-    background-color: #008cff;
-}
-
-@media screen and (min-width: 100px) and (max-width: 1000px) {
-    .container {flex-direction: column;}
-}
-
-.active {
-	background-color: #008cff;
-}
-
-/* About Us */
-.about-image {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.aboutus-image {
-    padding-top: 3%;
-}
-
-.aboutus-text {
-    position:relative;
-    font-size: 20px;
-    padding-top: 10%;
-    padding-right: 1%;
-    text-align: center;
-    font-family:"Montserrat", sans-serif;
-}
-
-@media screen and (min-width: 100px) and (max-width: 1000px) {
-    .about-image {flex-direction: column;}
+@media (max-width: 767px) {
+	.social-icons li.title {
+		display: block;
+		margin-right: 0;
+		font-weight: 600;
+	}
 }

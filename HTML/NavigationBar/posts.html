@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Posts</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			type="text/css"
-			rel="stylesheet"
-			href="../../CSS/NavigationBar/posts.css"
-		/>
-	</head>
 
-	<body>
-		<nav class="container">
-			<div class="heading">
-				<h4>Innovatech</h4>
-			</div>
-			<ul class="nav-links">
-				<li>
-					<a href="posts.html" class="child active"><i>Posts</i></a>
-				</li>
-				<li><a href="newsletter.html" class="child">Newsletter</a></li>
-				<li><a href="about.html" class="child">About</a></li>
-				<li><a href="login.html" class="child">Login</a></li>
-				<li><a href="signup.html" class="child">Sign&nbsp;up</a></li>
-			</ul>
-		</nav>
-		<div class="body-text">
-			<ul id="result"></ul>
-			<img id="image" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Posts</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/global.css" />
+	<link type="text/css" rel="stylesheet" href="../../CSS/NavigationBar/posts.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="page-container">
+		<div class="content-wrap">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="posts.html">InnovaTech</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="posts.html">Posts</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="newsletter.html">Newsletter</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="signup.html">Sign up</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
-		<script src="../../JavaScript/script.js"></script>
-	</body>
+
+		<form class="formContainer rounded">
+
+			<div class="row">
+				<div class="col">
+					<h2>New Post</h2>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="col">
+					<input class="form-control" type="text" placeholder="Enter a title" data-toggle="modal"
+						data-target="#newPost">
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col">
+					<button type="button" class="btn btn-info w-100" data-toggle="modal" data-target="#newPost">Add
+						Description</button>
+				</div>
+				<div class="col">
+					<button type="button" class="btn btn-info w-100" data-toggle="modal" data-target="#newPost">Add
+						Image</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- Create Post Form -->
+		<div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="createNewPostLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="createNewPostLabel">New Post</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="newPostTitle">Title</label>
+								<input id="newPostTitle" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label for="newPostDescription">Description</label>
+								<textarea id="newPostDescription" class="form-control" rows="3"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="newPostImage">Image</label>
+								<input id="newPostImage" class="form-control" type="file">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<button type="submit" class="btn btn-success w-100">Create</button>
+						<button type="button" class="btn btn-danger w-100" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div id="blogCard"></div>
+
+			<div id="loader"></div>
+
+			<button id="loadMoreButton">Load More</button>
+		</div>
+
+		<button class="btn rounded" id="backToTopButton">Top</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+		integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
+	<script src="../../JavaScript/script.js"></script>
+	<script src="../../JavaScript/NewPost/createPost.js"></script>
+</body>
+
 </html>
